@@ -11,10 +11,13 @@ body {
 a {
   color: #005eab;
   text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-a:hover {
+a:hover,
+a:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 /* Navbar */
@@ -26,7 +29,7 @@ a:hover {
   padding: 1rem 2rem;
   position: sticky;
   top: 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   z-index: 1000;
 }
 
@@ -38,12 +41,19 @@ a:hover {
   list-style: none;
   display: flex;
   gap: 1.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-links li {
   font-weight: 600;
 }
 
+.nav-links li a.active {
+  border-bottom: 2px solid #005eab;
+}
+
+/* Ícono del carrito */
 .carrito-icon {
   font-weight: bold;
 }
@@ -64,6 +74,11 @@ a:hover {
   color: #000;
   border-radius: 5px;
   font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e0a800;
 }
 
 .section {
@@ -92,6 +107,12 @@ a:hover {
   border-radius: 8px;
   width: 220px;
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .producto img {
@@ -107,6 +128,11 @@ a:hover {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.producto button:hover {
+  background-color: #004a89;
 }
 
 /* Contacto */
@@ -118,19 +144,32 @@ form {
   margin: auto;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  transition: border 0.3s ease;
 }
 
-button[type=\"submit\"] {
+input:focus,
+textarea:focus {
+  border-color: #005eab;
+  outline: none;
+}
+
+button[type="submit"] {
   background-color: #005eab;
   color: white;
   border: none;
   padding: 0.75rem;
   border-radius: 5px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #004a89;
 }
 
 /* Footer */
@@ -153,5 +192,37 @@ button[type=\"submit\"] {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  .productos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .producto {
+    width: 90%;
+  }
+
+  form {
+    padding: 0 1rem;
   }
 }

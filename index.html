@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fix & Go Mechanics</title>
+  <title>Fix & Go Mechanics - Tienda Online</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -31,23 +32,23 @@
     <section id="inicio" class="hero fade-in">
       <h1>Tu auto en forma donde quiera que estés</h1>
       <p>Servicio de mecánica a domicilio en Santiago: soluciones confiables y rápidas para tu vehículo, con la comodidad de no salir de casa.</p>
-      <a href="#contacto" class="cta-button">Cotiza con nosotros</a>
+      <a href="https://wa.me/56912345678" target="_blank" class="cta-button">Habla con nosotros por WhatsApp</a>
     </section>
 
     <section id="tienda" class="section fade-in">
       <h2>Tienda</h2>
       <div class="productos">
         <div class="producto">
-          <img src="https://via.placeholder.com/150" alt="Producto 1">
-          <h3>Batería Bosch</h3>
-          <p>$79.990</p>
-          <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+          <img src="img/tshirt-1.png" alt="T-shirt">
+          <h3>Half Sleve T-shirt for Men</h3>
+          <p>$99.00 <span class="sale-price">$129.00</span></p>
+          <button onclick="agregarAlCarrito()"><i class='bx bxs-cart'></i> Agregar al carrito</button>
         </div>
         <div class="producto">
           <img src="https://via.placeholder.com/150" alt="Producto 2">
           <h3>Kit de Frenos</h3>
           <p>$99.990</p>
-          <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+          <button onclick="agregarAlCarrito()"><i class='bx bxs-cart'></i> Agregar al carrito</button>
         </div>
       </div>
     </section>
@@ -82,6 +83,11 @@
 
         <button type="submit">Enviar</button>
       </form>
+    </section>
+
+    <section id="carrito" class="section fade-in">
+      <h2>Carrito</h2>
+      <p>Tu carrito está vacío por ahora.</p>
     </section>
   </main>
 

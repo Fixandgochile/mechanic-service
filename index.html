@@ -2,72 +2,68 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tienda ALPHA PROTENERGY</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fix & Go - Luces LED para Vehículos</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navbar -->
-  <header class="navbar">
+  <nav class="navbar">
     <div class="logo">
-      <img src="logo.png" alt="ALPHA PROTENERGY">
+      <img src="logo.png" alt="Fix & Go">
     </div>
     <ul class="nav-links">
-      <li><a href="#productos">Tienda</a></li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#productos">Productos</a></li>
       <li><a href="#contacto">Contacto</a></li>
-      <li class="carrito-icon"><a href="#">🛒</a></li>
+      <li><a href="#">Carrito <span id="cart-count">0</span></a></li>
     </ul>
-  </header>
+  </nav>
 
   <!-- Hero Section -->
-  <section class="hero fade-in">
-    <h1>¡Energía al máximo con ALPHA PROTENERGY!</h1>
-    <p>Suplementos de absorción rápida para antes y durante tu entrenamiento.</p>
+  <section class="hero">
+    <h1>Bienvenidos a Fix & Go</h1>
+    <p>Las mejores luces LED y barras LED para tu vehículo</p>
     <a href="#productos" class="cta-button">Ver productos</a>
   </section>
 
-  <!-- Tienda -->
-  <section id="productos" class="section fade-in">
-    <h2>Nuestros Productos</h2>
+  <!-- Productos Section -->
+  <section id="productos" class="section">
+    <h2>Productos</h2>
     <div class="productos">
       <div class="producto">
-        <img src="producto1.jpg" alt="Pre-Workout Citrus">
-        <h3>Pre-Workout Citrus</h3>
-        <p>Potencia tu entrenamiento desde el primer minuto.</p>
-        <button>Agregar al carrito</button>
+        <img src="producto1.jpg" alt="Barras LED">
+        <h3>Barras LED para vehículos</h3>
+        <p>Ilumina tu camino con nuestras barras LED de alta calidad.</p>
+        <button onclick="agregarAlCarrito()">Agregar al carrito</button>
       </div>
       <div class="producto">
-        <img src="producto2.jpg" alt="Intra-Workout Berry">
-        <h3>Intra-Workout Berry</h3>
-        <p>Rinde más con nuestra fórmula de rápida absorción.</p>
-        <button>Agregar al carrito</button>
-      </div>
-      <div class="producto">
-        <img src="producto3.jpg" alt="Combo Pack">
-        <h3>Combo Pack</h3>
-        <p>Pre + Intra con descuento exclusivo.</p>
-        <button>Agregar al carrito</button>
+        <img src="producto2.jpg" alt="Luces LED">
+        <h3>Luces LED para vehículos</h3>
+        <p>Mejora la visibilidad y el estilo de tu vehículo con nuestras luces LED.</p>
+        <button onclick="agregarAlCarrito()">Agregar al carrito</button>
       </div>
     </div>
   </section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="section fade-in">
-    <h2>Contáctanos</h2>
-    <form>
-      <input type="text" name="nombre" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu correo" required>
-      <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+  <!-- Contacto Section -->
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <form id="formulario-contacto">
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea placeholder="Tu mensaje" required></textarea>
       <button type="submit">Enviar mensaje</button>
     </form>
   </section>
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2025 ALPHA PROTENERGY. Todos los derechos reservados.</p>
+    <p>&copy; 2025 Fix & Go | Luces LED para vehículos</p>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

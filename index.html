@@ -2,97 +2,72 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fix & Go Mechanics - Tienda Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tienda ALPHA PROTENERGY</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Navbar -->
   <header class="navbar">
     <div class="logo">
-      <img src="https://images.squarespace-cdn.com/content/v1/67feb954f0cec617cb1221bf/0481a8d3-fe54-4a12-a588-dc90013b1f2a/LOGO+FIXED+SIZED.png" alt="Fix & Go Mechanics">
+      <img src="logo.png" alt="ALPHA PROTENERGY">
     </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#tienda">Tienda</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#acerca">Acerca de</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-        <li><a href="#carrito" class="carrito-icon">🛒 <span id="cart-count">0</span></a></li>
-      </ul>
-    </nav>
+    <ul class="nav-links">
+      <li><a href="#productos">Tienda</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li class="carrito-icon"><a href="#">🛒</a></li>
+    </ul>
   </header>
 
-  <main>
-    <section id="inicio" class="hero fade-in">
-      <h1>Tu auto en forma donde quiera que estés</h1>
-      <p>Servicio de mecánica a domicilio en Santiago: soluciones confiables y rápidas para tu vehículo, con la comodidad de no salir de casa.</p>
-      <a href="https://wa.me/56912345678" target="_blank" class="cta-button">Habla con nosotros por WhatsApp</a>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero fade-in">
+    <h1>¡Energía al máximo con ALPHA PROTENERGY!</h1>
+    <p>Suplementos de absorción rápida para antes y durante tu entrenamiento.</p>
+    <a href="#productos" class="cta-button">Ver productos</a>
+  </section>
 
-    <section id="tienda" class="section fade-in">
-      <h2>Tienda</h2>
-      <div class="productos">
-        <div class="producto">
-          <img src="img/tshirt-1.png" alt="T-shirt">
-          <h3>Half Sleve T-shirt for Men</h3>
-          <p>$99.00 <span class="sale-price">$129.00</span></p>
-          <button onclick="agregarAlCarrito()"><i class='bx bxs-cart'></i> Agregar al carrito</button>
-        </div>
-        <div class="producto">
-          <img src="https://via.placeholder.com/150" alt="Producto 2">
-          <h3>Kit de Frenos</h3>
-          <p>$99.990</p>
-          <button onclick="agregarAlCarrito()"><i class='bx bxs-cart'></i> Agregar al carrito</button>
-        </div>
+  <!-- Tienda -->
+  <section id="productos" class="section fade-in">
+    <h2>Nuestros Productos</h2>
+    <div class="productos">
+      <div class="producto">
+        <img src="producto1.jpg" alt="Pre-Workout Citrus">
+        <h3>Pre-Workout Citrus</h3>
+        <p>Potencia tu entrenamiento desde el primer minuto.</p>
+        <button>Agregar al carrito</button>
       </div>
-    </section>
+      <div class="producto">
+        <img src="producto2.jpg" alt="Intra-Workout Berry">
+        <h3>Intra-Workout Berry</h3>
+        <p>Rinde más con nuestra fórmula de rápida absorción.</p>
+        <button>Agregar al carrito</button>
+      </div>
+      <div class="producto">
+        <img src="producto3.jpg" alt="Combo Pack">
+        <h3>Combo Pack</h3>
+        <p>Pre + Intra con descuento exclusivo.</p>
+        <button>Agregar al carrito</button>
+      </div>
+    </div>
+  </section>
 
-    <section id="servicios" class="section fade-in">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Mecánica a domicilio</li>
-        <li>Diagnóstico computarizado</li>
-        <li>Mantenimiento preventivo</li>
-        <li>Instalación de baterías</li>
-        <li>Servicio de neumáticos</li>
-      </ul>
-    </section>
+  <!-- Contacto -->
+  <section id="contacto" class="section fade-in">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="4" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
 
-    <section id="acerca" class="section fade-in">
-      <h2>Acerca de</h2>
-      <p>Somos una empresa chilena comprometida con el bienestar de tu auto sin que tengas que salir de casa.</p>
-    </section>
-
-    <section id="contacto" class="section fade-in">
-      <h2>Contacto</h2>
-      <form id="formulario-contacto">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-
-        <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
-
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-
-        <button type="submit">Enviar</button>
-      </form>
-    </section>
-
-    <section id="carrito" class="section fade-in">
-      <h2>Carrito</h2>
-      <p>Tu carrito está vacío por ahora.</p>
-    </section>
-  </main>
-
+  <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2024 Fix & Go Mechanics - Santiago, Chile</p>
+    <p>&copy; 2025 ALPHA PROTENERGY. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>

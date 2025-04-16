@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fix & Go Mechanics</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo">
+      <img src="https://images.squarespace-cdn.com/content/v1/67feb954f0cec617cb1221bf/0481a8d3-fe54-4a12-a588-dc90013b1f2a/LOGO+FIXED+SIZED.png" alt="Fix & Go Mechanics">
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tienda">Tienda</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#acerca">Acerca de</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#carrito" class="carrito-icon">🛒 <span id="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero fade-in">
+      <h1>Tu auto en forma donde quiera que estés</h1>
+      <p>Servicio de mecánica a domicilio en Santiago: soluciones confiables y rápidas para tu vehículo, con la comodidad de no salir de casa.</p>
+      <a href="#contacto" class="cta-button">Cotiza con nosotros</a>
+    </section>
+
+    <section id="tienda" class="section fade-in">
+      <h2>Tienda</h2>
+      <div class="productos">
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 1">
+          <h3>Batería Bosch</h3>
+          <p>$79.990</p>
+          <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+        </div>
+        <div class="producto">
+          <img src="https://via.placeholder.com/150" alt="Producto 2">
+          <h3>Kit de Frenos</h3>
+          <p>$99.990</p>
+          <button onclick="agregarAlCarrito()">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section fade-in">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Mecánica a domicilio</li>
+        <li>Diagnóstico computarizado</li>
+        <li>Mantenimiento preventivo</li>
+        <li>Instalación de baterías</li>
+        <li>Servicio de neumáticos</li>
+      </ul>
+    </section>
+
+    <section id="acerca" class="section fade-in">
+      <h2>Acerca de</h2>
+      <p>Somos una empresa chilena comprometida con el bienestar de tu auto sin que tengas que salir de casa.</p>
+    </section>
+
+    <section id="contacto" class="section fade-in">
+      <h2>Contacto</h2>
+      <form id="formulario-contacto">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 Fix & Go Mechanics - Santiago, Chile</p>
+  </footer>
+</body>
+</html>

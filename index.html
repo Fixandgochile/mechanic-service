@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fix & Go Mechanical Services</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Mecánica automotriz" name="keywords">
+    <meta content="Mecánica móvil, Mantenciones preventivas, Frenos, suspenciones, Luces Led" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Navbar Start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container-fluid">
+    <a href="index.html" class="navbar-brand">
+      <img src="img/logo.png" alt="Fix & Go">
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+<div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+            <div class="navbar-nav ml-auto py-0">
+                <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                <a href="nosotros.html" class="nav-item nav-link">Nosotros</a>
+                <a href="servicios.html" class="nav-item nav-link">Servicios</a>
+                <a href="tienda.html" class="nav-item nav-link">Tienda</a>
+                <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+
+                <div class="nav-item dropdown position-relative">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Más</a>
+                    <div class="dropdown-menu border-0 rounded-0 m-0"
+                         style="left: auto; right: 0; min-width: 200px;">
+       <a href="terminosycondiciones.html" class="dropdown-item">Términos y Condiciones</a>
+       <a href="testimonios.html" class="dropdown-item">Testimonios</a>
+       <a href="faq.html" class="dropdown-item">FAQ</a>
+                    </div>
+                </div>
+        
+        <li class="nav-item">
+          <a href="carrito.html" class="nav-link position-relative">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge badge-pill badge-primary">0</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Navbar End -->
+
+<script>
+  // Función para abrir y cerrar el menú lateral
+  function toggleMenu() {
+    document.querySelector('.nav-mobile').classList.toggle('open');
+  }
+</script>
+
+    <!-- Hero Section Start -->
+<div class="container-fluid p-0">
+    <div class="position-relative">
+        <img class="w-100" src="img/carousel-1.jpg" alt="Imagen Principal" style="height: 50vh; object-fit: cover;">
+        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="top: 0; bottom: 0;">
+            <div class="p-3 text-center" style="max-width: 900px;">
+                <h4 class="text-white text-uppercase mb-md-3">Mecánica móvil en Santiago</h4>
+                <h1 class="display-3 text-white mb-md-4">Cómodo, Transparente y Confiable</h1>
+                <h4 class="text-white text-uppercase mb-md-3">Especialistas en mantenimiento y reparación de vehículos</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero Section End -->
+
+<!-- About + Formulario Start -->
+<div class="container-fluid py-5">
+  <div class="container pt-5">
+    <div class="row">
+      <!-- Imagen a la izquierda -->
+      <div class="col-lg-6" style="min-height: 500px;">
+        <div class="position-relative h-100">
+          <img class="position-absolute w-100 h-100" src="img/Trabajo.jpg" style="object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Texto + Formulario a la derecha -->
+      <div class="col-lg-6 pt-5 pb-lg-5">
+        <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+
+          <!-- Texto Inicial Start -->
+          <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Cotiza con nosotros</h6>
+          <h1 class="mb-3">¿Necesitas mecánica para tu vehículo?</h1>
+          <p>¡Bienvenido a nuestro servicio de mecánica a domicilio! Te ofrecemos la comodidad de dejar tu auto en perfectas condiciones sin que tengas que moverte de tu casa. Nuestros expertos trabajan en tu vehículo con la misma calidad y profesionalismo que en un taller convencional. Ahórrate el tiempo de desplazarte y disfruta de la facilidad de tener el servicio directamente en tu puerta. ¡Tu auto, en buenas manos, donde tú lo necesites! Rellena tus datos aquí abajo y cuentanos en que podríamos ayudarte.</p>
+
+<!-- Texto Inicial Fin -->
+
+          <!-- Formulario Start-->
+          <form action="https://formspree.io/f/xzzeqron" method="POST">
+            <div class="row">
+              <!-- Nombre -->
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control p-3" placeholder="Nombre" name="Nombre" required>
+              </div>
+              <!-- Apellido -->
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control p-3" placeholder="Apellido" name="Apellido" required>
+              </div>
+              <!-- Marca -->
+              <div class="col-md-6 mb-3">
+                <select class="custom-select px-3" style="height: 47px;" name="Marca del Vehículo" required>
+                  <option selected disabled>Marca del Vehículo</option>
+                  <option>AUDI</option>
+                  <option>BMW</option>
+                  <option>CHANGAN</option>
+                  <option>CHERY</option>
+                  <option>CHEVROLET</option>
+                  <option>CITROËN</option>
+                  <option>DODGE</option>
+                  <option>FORD</option>
+                  <option>FIAT</option>
+                  <option>GWM</option>
+                  <option>HAVAL</option>
+                  <option>HONDA</option>
+                  <option>HYUNDAI</option>
+                  <option>JAC</option>
+                  <option>JEEP</option>
+                  <option>KIA</option>
+                  <option>MAXUS</option>
+                  <option>MAZDA</option>
+                  <option>MERCEDEZ-BENZ</option>
+                  <option>MITSUBISHI</option>
+                  <option>NISSAN</option>
+                  <option>OPEL</option>
+                  <option>PEUGEOT</option>
+                  <option>PORSCHE</option>
+                  <option>RAM</option>
+                  <option>RENAULT</option>
+                  <option>ŠKODA</option>
+                  <option>SUBARU</option>
+                  <option>SUZUKI</option>
+                  <option>TOYOTA</option>
+                  <option>VOLKSWAGEN</option>
+                </select>
+              </div>
+              <!-- Modelo -->
+              <div class="col-md-6 mb-3">
+                <input type="text" class="form-control p-3" placeholder="Modelo del Vehículo" name="Modelo" required>
+              </div>
+              <!-- Patente -->
+              <div class="col-md-4 mb-3">
+                <input type="text" class="form-control p-3" placeholder="Patente" name="Patente" required>
+              </div>
+              <!-- Kilometraje -->
+              <div class="col-md-4 mb-3">
+                <input type="number" class="form-control p-3" placeholder="Kilometraje" name="Kilometraje" required>
+              </div>
+              <!-- Año -->
+              <div class="col-md-4 mb-3">
+                <input type="number" class="form-control p-3" placeholder="Año del Vehículo" name="Año" required>
+              </div>
+              <!-- Comuna -->
+              <div class="col-md-6 mb-3">
+                <select class="custom-select px-3" style="height: 47px;" name="Comuna" required>
+                  <option selected disabled>Comuna</option>
+                  <option>Chicureo</option>
+                  <option>La Reina</option>
+                  <option>Las Condes</option>
+                  <option>Lo Barnechea</option>
+                  <option>Ñuñoa</option>
+                  <option>Peñalolen</option>
+                  <option>Providencia</option>
+                  <option>Vitacura</option>
+                </select>
+              </div>
+              <!-- Contacto -->
+              <div class="col-md-6 mb-3">
+                <label class="d-block font-weight-bold mb-2">Opción de contacto:</label>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Metodo de Contacto" id="contactoWhatsapp" value="Whatsapp" required>
+                  <label class="form-check-label" for="contactoWhatsapp">Whatsapp</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="Metodo de Contacto" id="contactoCorreo" value="Correo" required>
+                  <label class="form-check-label" for="contactoCorreo">Correo</label>
+                </div>
+              </div>
+              <!-- Whatsapp -->
+              <div class="col-md-6 mb-3" id="campoWhatsapp" style="display: none;">
+                <input type="tel" class="form-control p-3" placeholder="Número de Whatsapp" name="Número de Whatsapp">
+              </div>
+              <!-- Correo -->
+              <div class="col-md-6 mb-3" id="campoCorreo" style="display: none;">
+                <input type="email" class="form-control p-3" placeholder="Correo Electrónico" name="Correo Electrónico">
+              </div>
+              <!-- Mensaje -->
+              <div class="col-12 mb-3">
+                <textarea class="form-control p-3" rows="4" placeholder="Mensaje" name="Mensaje" required></textarea>
+              </div>
+              <!-- Botón -->
+              <div class="col-12 text-center">
+                <button class="btn btn-primary px-5" type="submit">Enviar</button>
+              </div>
+            </div>
+          </form>
+          <!-- Formulario Fin -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Script contacto dinámico Start-->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const contactoWhatsapp = document.getElementById("contactoWhatsapp");
+    const contactoCorreo = document.getElementById("contactoCorreo");
+    const campoWhatsapp = document.getElementById("campoWhatsapp");
+    const campoCorreo = document.getElementById("campoCorreo");
+
+    contactoWhatsapp.addEventListener("change", function () {
+      campoWhatsapp.style.display = "block";
+      campoCorreo.style.display = "none";
+    });
+
+    contactoCorreo.addEventListener("change", function () {
+      campoWhatsapp.style.display = "none";
+      campoCorreo.style.display = "block";
+    });
+  });
+</script>
+<!-- Script contacto dinámico End-->
+
+    <!-- Feature Start -->
+<div class="container-fluid pb-5">
+    <div class="container pb-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="d-flex mb-4 mb-lg-0">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                        <i class="fa fa-2x fa-tools text-white"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h5>Servicio a domicilio</h5>
+                        <p class="m-0 service-text">Vamos donde estés, sin que tengas que moverte de tu casa u oficina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex mb-4 mb-lg-0">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                        <i class="fa fa-2x fa-certificate text-white"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h5>Técnicos certificados</h5>
+                        <p class="m-0 service-text">Nuestro equipo está compuesto por profesionales con experiencia y garantía.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex mb-4 mb-lg-0">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3" style="height: 100px; width: 100px;">
+                        <i class="fa fa-2x fa-clock text-white"></i>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <h5>Rápido y eficiente</h5>
+                        <p class="m-0 service-text">Revisamos y reparamos tu auto en menos tiempo de lo que imaginas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Feature End -->
+
+    <!-- Service Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Servicios</h6>
+            <h1>Nuestros Servicios Mecánicos</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                    <i class="fa fa-heartbeat fa-2x mx-auto mb-4"></i>
+                    <h5 class="mb-2">Diagnóstico Completo</h5>
+                    <p class="m-0">Revisión avanzada con tecnología para detectar fallas y optimizar el rendimiento de tu vehículo.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                    <i class="fas fa-tools fa-2x mx-auto mb-4"></i>
+                    <h5 class="mb-2">Mantención y Reparación</h5>
+                    <p class="m-0">Mantenciones preventivas, ajustes y arreglos para garantizar la seguridad y eficiencia del vehículo.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                    <i class="fa fa-car-crash fa-2x mx-auto mb-4"></i>
+                    <h5 class="mb-2">Sistema de Frenos y Suspensión</h5>
+                    <p class="m-0">Especialistas en frenos y suspensión, brindando seguridad, control y estabilidad en cada trayecto.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                    <i class="fas fa-lightbulb fa-2x mx-auto mb-4"></i>
+                    <h5 class="mb-2">Venta de Luces LED Especializadas</h5>
+                    <p class="m-0">Luces LED de alta calidad que mejoran la visibilidad, seguridad y estilo de tu vehículo en todo momento.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+<!-- Marcas con las que trabajamos Start -->
+<div class="container-fluid bg-light py-5">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Nuestras Marcas</h6>
+            <h1 class="mb-4">Marcas que han confiado en nosotros</h1>
+        </div>
+
+        <!-- Fila 1 -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca1.png" alt="Marca 1" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca2.png" alt="Marca 2" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca3.png" alt="Marca 3" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca4.png" alt="Marca 4" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca5.png" alt="Marca 5" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca6.png" alt="Marca 6" class="img-fluid" style="max-height: 80px;">
+            </div>
+        </div>
+
+        <!-- Fila 2 -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca7.png" alt="Marca 7" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca8.png" alt="Marca 8" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca9.png" alt="Marca 9" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca10.png" alt="Marca 10" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca11.png" alt="Marca 11" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca12.png" alt="Marca 12" class="img-fluid" style="max-height: 80px;">
+            </div>
+        </div>
+
+        <!-- Fila 3 -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca13.png" alt="Marca 13" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca14.png" alt="Marca 14" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca15.png" alt="Marca 15" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca16.png" alt="Marca 16" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca17.png" alt="Marca 17" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca18.png" alt="Marca 18" class="img-fluid" style="max-height: 80px;">
+            </div>
+        </div>
+
+        <!-- Fila 4 -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca19.png" alt="Marca 19" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca20.png" alt="Marca 20" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca21.png" alt="Marca 21" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca22.png" alt="Marca 22" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca23.png" alt="Marca 23" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca24.png" alt="Marca 24" class="img-fluid" style="max-height: 80px;">
+            </div>
+        </div>
+
+        <!-- Fila 5 -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca25.png" alt="Marca 25" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca26.png" alt="Marca 26" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca27.png" alt="Marca 27" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca28.png" alt="Marca 28" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca29.png" alt="Marca 29" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca30.png" alt="Marca 30" class="img-fluid" style="max-height: 80px;">
+            </div>
+        </div>
+
+        <!-- Fila 6: 1 logo -->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-4 col-sm-2 mb-4 text-center">
+                <img src="img/marca31.png" alt="Marca 31" class="img-fluid" style="max-height: 80px;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Marcas con las que trabajamos End -->
+
+<!-- Promociones Start -->
+<div id="promoModal" class="modal-overlay">
+  <div class="modal-content fade">
+    <span class="close-button" onclick="closeModal()">&times;</span>
+    <form action="https://formspree.io/f/mwpljqrz" method="POST">
+      <div class="container-fluid bg-registration py-5" style="margin: 0px 0;">
+        <div class="container py-5">
+          <div class="row align-items-center">
+            <div class="col-lg-7 mb-5 mb-lg-0">
+              <div class="mb-4">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">¡Mega Oportunidad!</h6>
+                <h1 class="text-white"><span class="text-primary">Participa por un cupón de 30% Dcto.</span> en las mejores luces LED del mercado</h1>
+              </div>
+              <p class="text-white">Suscríbete a nuestra comunidad y entra al sorteo de un cupón del 30 % de descuento para equipar tu vehículo con las luces LED más avanzadas del mercado. Disfruta de iluminación de alta potencia, mayor visibilidad nocturna, ahorro energético y una durabilidad inigualable. (Promoción válida solo para las marcas mencionadas en la sección "Nuestras marcas")</p>
+              <ul class="list-inline text-white m-0">
+                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Solo ingresa tu nombre, apellido, comuna, tu correo y ya estarás participando!</li>
+                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Oferta válida por tiempo limitado. ¡No dejes pasar esta ocasión para transformar tu conducción!</li>
+                <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>El sorteo será realizado el día 5 de junio de 2025</li>
+              </ul>
+            </div>
+            <div class="col-lg-5">
+              <div class="card border-0">
+                <div class="card-header bg-primary text-center p-4">
+                  <h1 class="text-white m-0">Suscríbete Aquí</h1>
+                </div>
+                <div class="card-body rounded-bottom bg-white p-5">
+                  <div class="form-group">
+                    <input type="text" class="form-control p-4" placeholder="Tu Nombre" name="nombre" required />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control p-4" placeholder="Tu Apellido" name="apellido" required />
+                  </div>
+                  <div class="form-group">
+                    <select class="form-control px-4" name="Comuna" required style="height: 47px; width: 100%;">
+                      <option value="" disabled selected hidden>Comuna</option>
+                      <option>Chicureo</option>
+                      <option>La Reina</option>
+                      <option>Las Condes</option>
+                      <option>Lo Barnechea</option>
+                      <option>Ñuñoa</option>
+                      <option>Peñalolén</option>
+                      <option>Providencia</option>
+                      <option>Vitacura</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control p-4" placeholder="Tu Correo" name="email" required />
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="termsCheck" required>
+                    <label class="form-check-label" for="termsCheck">
+                      Acepto los <a href="terminosycondiciones.html" target="_blank">términos y condiciones</a> de la promoción.
+                    </label>
+                  </div>
+                  <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="infoCheck" required>
+                    <label class="form-check-label" for="infoCheck">
+                      Acepto recibir información, novedades y promociones exclusivas por correo electrónico.
+                    </label>
+                  </div>
+                  <div>
+                    <button class="btn btn-primary btn-block py-3" type="submit">Suscribir</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- Promoción End -->
+
+    <!-- Team Start -->
+<div class="container-fluid py-5">
+    <div class="container pt-5 pb-3">
+        <div class="text-center mb-3 pb-3">
+            <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Socios</h6>
+            <h1>Nuestros Fundadores</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                <div class="team-item bg-white mb-4">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/felipe.png" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/pipe.vtec/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h5 class="text-truncate">Felipe Meca</h5>
+                        <p class="m-0">(COO) Chief Operating Officer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                <div class="team-item bg-white mb-4">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="img/cris.jpg" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/ristop._/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="text-center py-4">
+                        <h5 class="text-truncate">Cristobal Parraguez</h5>
+                        <p class="m-0">(CMO) Chief Marketing Officer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Testimonios</h6>
+                <h1>Que Dicen Nuestros Clientes</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel">
+                <div class="text-center pb-4">
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">"Me explicaron todo lo que tenía mi auto con informes y evidencia, y además no me cobraron de más"
+                        </p>
+                        <h5 class="text-truncate">Hernán Torres</h5>
+                        <span>Ñuñoa</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">"Mientras atendía a mis pacientes, Arreglaron los problemas de mi auto y sin yo tener que ir"
+                        </p>
+                        <h5 class="text-truncate">Alejandro Velásquez</h5>
+                        <span>Las Condes</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">"No tuvimos que detener las operaciones de nuestra flota gracias a la rapidez con la que trabajaron"
+                        </p>
+                        <h5 class="text-truncate">Anida Ltda.</h5>
+                        <span>Providencia</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <div class="testimonial-text bg-white p-4 mt-n5">
+                        <p class="mt-5">"Me encanto el no tener que perder mi tiempo en un taller, el mismo día me lo dejarón impecable"
+                        </p>
+                        <h5 class="text-truncate">Diego Parraguez</h5>
+                        <span>Lo Barnechea</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="index.html" class="d-inline-block mb-3" style="
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+">
+    <img src="img/logowhite.png" alt="Fix & Go Logo" style="
+        height: 90px;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+        pointer-events: none;
+    ">
+</a>
+                <p>Mecánica Móvil, Cómodo, Transparente y Confiable</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Siguenos</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/fixandgochile/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Zonas de Atención</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2"><i class="fa fa-angle-right mr-2"></i>Chicureo</a>
+                    <a class="text-white-50 mb-2"><i class="fa fa-angle-right mr-2"></i>La Reina</a>
+                    <a class="text-white-50 mb-2"><i class="fa fa-angle-right mr-2"></i>Las Condes</a>
+                    <a class="text-white-50 mb-2"><i class="fa fa-angle-right mr-2"></i>Lo Barnechea</a>
+                    <a class="text-white-50 mb-2"><i class="fa fa-angle-right mr-2"></i>Ñuñoa</a>
+                    <a class="text-white-50 mb-2"><i class="fa fa-angle-right mr-2"></i>Peñalolen</a>
+                   <a class="text-white-50 mb-2"><i class="fa fa-angle-right mr-2"></i>Providencia</a>
+                    <a class="text-white-50"><i class="fa fa-angle-right mr-2"></i>Vitacura</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Podría Serte Útil</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="nosotros.html"><i class="fa fa-angle-right mr-2"></i>Nosotros</a>
+                    <a class="text-white-50 mb-2" href="servicios.html"><i class="fa fa-angle-right mr-2"></i>Servicios</a>
+                    <a class="text-white-50 mb-2" href="tienda.html"><i class="fa fa-angle-right mr-2"></i>Tienda</a>
+                    <a class="text-white-50 mb-2" href="contacto.html"><i class="fa fa-angle-right mr-2"></i>Contacto</a>
+                    <a class="text-white-50 mb-2" href="terminosycondiciones.html"><i class="fa fa-angle-right mr-2"></i>Términos y Condiciones</a>
+                    <a class="text-white-50 mb-2" href="testimonios.html"><i class="fa fa-angle-right mr-2"></i>Testimonios</a>
+                    <a class="text-white-50" href="faq.html"><i class="fa fa-angle-right mr-2"></i>FAQ</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Contáctanos</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Santiago, CHILE</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+56 9 5790 5575</p>
+                <p><i class="fa fa-envelope mr-2"></i>contacto@fixandgo.cl</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="www.fixandgo.cl">fixandgo.cl</a>. Todos Los Derechos Reservados.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Designed by CTP Company</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+
+<!-- Pop-up -->
+<script>
+let modalShown = false;
+
+function showModal() {
+  const modalOverlay = document.getElementById("promoModal");
+  const modalContent = modalOverlay.querySelector(".modal-content");
+
+  modalOverlay.classList.add("show");
+  modalContent.classList.add("show");
+}
+
+function closeModal() {
+  const modalOverlay = document.getElementById("promoModal");
+  const modalContent = modalOverlay.querySelector(".modal-content");
+
+  modalOverlay.classList.remove("show");
+  modalContent.classList.remove("show");
+  modalOverlay.classList.add("hide");
+
+  setTimeout(() => {
+    modalOverlay.style.display = "none";
+    modalOverlay.classList.remove("hide");
+  }, 500);
+}
+
+window.addEventListener("scroll", function () {
+  if (!modalShown && window.scrollY > 300 && !sessionStorage.getItem("promoShown")) {
+    showModal();
+    sessionStorage.setItem("promoShown", "true");
+    modalShown = true;
+  }
+});
+</script>
+<!-- Pop-up End-->
+
+<script>
+  function toggleMobileMenu() {
+    document.getElementById("mobileSidebar").classList.toggle("open");
+  }
+</script>
+
+</body>
+
+</html>
